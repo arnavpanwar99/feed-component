@@ -1,0 +1,76 @@
+@import "./../../sass/variables";
+
+.container{
+    display: flex;
+    font-family: 'Ubuntu';
+    height: 70vh;
+    width: 40vw;
+    border-top: #ccc .1rem solid;
+    border-bottom: #ccc .1rem solid;
+    margin: 2rem auto;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    &_pic{
+        display: flex;
+        flex: 1;
+    }
+    &_main{
+        display: flex;
+        flex-direction: column;
+        flex: 9;
+        &_initials{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            &_name{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            &_username{
+                margin-bottom: .5rem;
+                font-size: 1.3rem;
+                cursor: pointer;
+                color: $gray;
+            }
+            &_caption{
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                font-weight: normal;
+            }
+        }
+        &_content{
+            flex: 6;
+            display: flex;
+            background-size: 80rem 100%;
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            border-radius: .7rem;
+            &_text{
+                text-align: center;
+                margin: 5rem 2rem;
+                font-size: 3.5rem;
+                font-weight: bolder;
+            }
+        }
+        &_stats{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            &_item{
+                flex: 1;
+                cursor: pointer;
+                margin-left: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.like{
+    flex: 1;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #f33;
+}

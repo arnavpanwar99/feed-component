@@ -1,0 +1,21 @@
+.image{
+    height: 8vh;
+    width: 4vw;
+    margin: 0 2rem 0 1rem;
+    border-radius: 50%;
+}
+.name{
+    background-color: #c0c0c0;
+    height: 8vh;
+    width: 4vw;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 2rem 0 1rem;
+    border-radius: 50%;
+    &_initials{
+        flex: 1;
+        font-size: large;
+        margin: auto 0;
+        text-align: center;
+    }
+}
